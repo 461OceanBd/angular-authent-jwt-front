@@ -1,0 +1,44 @@
+$headerHeight: 55px;
+
+.header {
+  background-color: #18191C;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  height: $headerHeight;
+
+  .logo {
+    cursor: pointer;
+
+    img {
+      width: $headerHeight;
+      height: auto;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+
+    .signin,
+    .signup {
+      font-family: 'dejavu-sans-mono';
+      font-size: 1.2rem;
+      background-color: #18191C;
+      border: 1.7px solid lightgray;
+      border-radius: 8% 8% 8% 8%;
+      color: lightgray;
+      padding: 5px 20px;
+      cursor: pointer;
+      transition: border 0.3s, color 0.3s;
+
+      &:hover {
+        border: 1.7px solid rgb(148, 145, 145);
+        color: rgb(148, 145, 145);
+      }
+    }
+  }
+}
