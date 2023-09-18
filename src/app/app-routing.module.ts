@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './pages/home/home.page';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { SignUpPage } from './pages/sign-up/sign-up.page';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomePage },
+  { path: 'sign-up', component: SignUpPage },
+  { path: 'sign-in', component: SignUpPage },
   { path: '**', component: NotFoundComponent },
 ];
 
