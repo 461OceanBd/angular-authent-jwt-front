@@ -3,7 +3,7 @@
     <img src="assets/imgs/robot-utilisateur.svg" alt="Logo">
   </div>
   <div class="form-container">
-    <form (ngSubmit)="this.onSubmit()">
+    <form [formGroup]="signUpForm" (ngSubmit)="this.onSubmit()">
       <div class="form-group">
         <input type="email" formControlName="email" placeholder="* Email" class="form-control" name="email">
       </div>
