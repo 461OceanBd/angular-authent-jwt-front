@@ -9,8 +9,4 @@ export class HeaderComponent {
 
   constructor() {}
 
-  protected signIn() {}
-
-  protected signUp() {}
-
 }

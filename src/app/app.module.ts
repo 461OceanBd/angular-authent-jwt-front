@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomePage } from './pages/home/home.page';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SignUpPage } from './pages/sign-up/sign-up.page';
+import { SignInPage } from './pages/sign-in/sign-in.page';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,9 +17,11 @@ import { SignUpPage } from './pages/sign-up/sign-up.page';
     HeaderComponent,
     NotFoundComponent,
     SignUpPage,
+    SignInPage,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
   ],
   providers: [],
