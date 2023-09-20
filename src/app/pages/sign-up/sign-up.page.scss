@@ -31,7 +31,11 @@
       background-color: black;
       border: none;
       border-radius: 5px;
-      color: white;
+
+      &:focus {
+        outline: 1px solid lightgray;
+        transition: 0.3s;
+      }
 
       &.input-invalid {
         border: 1px solid #c03865;
