@@ -21,7 +21,7 @@
   margin: 6% auto;
 
 
-  .form-group {
+  .form-line {
     margin-bottom: 15px;
 
     input {
@@ -32,11 +32,20 @@
       border: none;
       border-radius: 5px;
       color: white;
+
+      &.input-invalid {
+        border: 1px solid #c03865;
+      }
+
     }
   }
 
-  .validation-errors {
-    color: #c03865;;
+  .error-message {
+    color: #c03865;
+    font-size: 0.8em;
+    margin-left: 10px;
+    margin-top: 6px;
+
   }
 
   .submit-container {
