@@ -6,7 +6,7 @@
     <form [formGroup]="signUpForm" (ngSubmit)="this.onSubmit()">
       <div class="form-line">
         <input type="email" formControlName="email" placeholder="* Email" class="form-control" name="email"
-         [ngClass]="{'input-invalid' : this.submitted && this.email?.invalid}">
+         [ngClass]="{'input-invalid' : this.submitted && this.email?.invalid}" maxlength="100">
         <div class="validator-container" *ngIf="this.submitted && this.email?.invalid">
           <div class="error-message" *ngIf="this.email?.hasError('required'); else emailFormat">
             email can't be blank
@@ -20,7 +20,7 @@
       </div>
       <div class="form-line">
         <input type="password" formControlName="password" placeholder="* Password" class="form-control" name="password"
-         [ngClass]="{'input-invalid' : this.submitted && this.password?.invalid}">
+         [ngClass]="{'input-invalid' : this.submitted && this.password?.invalid}" maxlength="100">
         <div class="validator-container" *ngIf="this.submitted && this.password?.invalid">
           <div class="error-message" *ngIf="this.password?.hasError('required'); else passwordFormat">
             password can't be blank
@@ -39,7 +39,7 @@
       </div>
       <div class="form-line">
         <input type="password" formControlName="repassword" placeholder="* Confirm password" class="form-control" name="repassword"
-         [ngClass]="{'input-invalid' : this.submitted && this.repassword?.invalid}">
+         [ngClass]="{'input-invalid' : this.submitted && this.repassword?.invalid}" maxlength="100">
         <div class="validator-container" *ngIf="this.submitted && this.repassword?.invalid">
           <div class="error-message" *ngIf="this.repassword?.hasError('required'); else sameRepassword">
             repassword can't be blank
