@@ -4,7 +4,7 @@
   margin-top: 40px;
 
   img {
-    width: 50px; /* Ajustez la taille de votre logo */
+    width: 50px;
     height: auto;
   }
 }
@@ -33,6 +33,7 @@
       border-radius: 5px;
 
       &:focus {
+        background-color: #131414;
         outline: 1px solid lightgray;
         transition: 0.3s;
       }
