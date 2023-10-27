@@ -31,10 +31,17 @@
       background-color: black;
       border: none;
       border-radius: 5px;
+      color: lightgrey;
+
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px black inset !important;
+        -webkit-text-fill-color: lightgrey;
+      }
+
 
       &:focus {
         background-color: #131414;
-        outline: 1px solid lightgray;
+        // outline: 1px solid lightgray;
         transition: 0.3s;
       }
 
